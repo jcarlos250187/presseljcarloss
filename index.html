@@ -6,36 +6,27 @@
   <title>Redirecionando...</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #f9f9f9;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       font-family: Arial, sans-serif;
+      color: #333;
       text-align: center;
     }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #ffffff;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
+    .message {
+      font-size: 1.5em;
+      font-weight: bold;
+      animation: fadeIn 1.5s ease-in-out;
     }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 
-  <!-- Facebook Pixel Code -->
+  <!-- Pixel do Facebook -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -46,20 +37,22 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1262200501916088');
-    fbq('track', 'Purchase', {value: 16.00, currency: 'BRL'});
+    fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1262200501916088&ev=Purchase&cd[value]=16.00&cd[currency]=BRL&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
-
-  <script>
-    setTimeout(function() {
-      window.location.href = 'https://drive.google.com/file/d/1OU31TMqQ33dcTwBCtMKr4UKMcGrKZvgk/view?usp=sharing';
-    }, 3000);
-  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1262200501916088&ev=PageView&noscript=1"/>
+  </noscript>
 </head>
 <body>
-  <div class="loader"></div>
-  <h1>Aguarde para receber...</h1>
+  <div class="message">
+    Aguarde que vou liberar o que prometi...
+  </div>
+
+  <script>
+    setTimeout(function(){
+      window.location.href = "https://ig.me/m/carolinaandrade376?text=" + encodeURIComponent("Quero conhecer seus conteúdos");
+    }, 3000);
+  </script>
 </body>
 </html>
